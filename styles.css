@@ -1,10 +1,16 @@
 body {
   background-color: #ffffff;
   overflow: hidden;
+  cursor: url("/Resources/cursor.png"), auto;
 }
 
 .main_container {
   background: white;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cpl:hover {
@@ -62,4 +68,59 @@ body {
   65%, 75% {
     transform: translateY(-75%);
   }
+}
+.carousel-item {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  padding: 0;
+}
+
+carousel-inner {
+  overflow: hidden;
+}
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  60%, 90% {
+    width: 21.2em;
+  }
+}
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 17em;
+  }
+}
+.text_1 {
+  animation: text1;
+}
+
+.text_2 {
+  animation: text2;
+}
+
+.text_1, .text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+.text_1::after, .text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
 }/*# sourceMappingURL=styles.css.map */
