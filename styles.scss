@@ -76,23 +76,32 @@ body {
 Add class to carousel-item additionally, change png to botain continous animation. connec front and back
 Additionally maybe the lack of padding and margins is what causes the slideshow to render out of proportion. Combat this by changing the params. 
 
+
  .txt2{
   min-height: 33vh; //change to something else or fit to container. 
   margin: 0;
- object-fit: fill;
-
+  padding: 0;
+object-fit: contain;
+text-align: center;
   background-color: #bfdfec;
   font-family: system-ui, calibri, serif;
   background-repeat: repeat-x;
-  background-image: url("https://i.stack.imgur.com/b7z29.png");
+  background-image: url("https://tmpfiles.org/dl/1630822/newproject1.png");
+  background-size: cover; // fit conver
   animation: movement 10s linear infinite;
 }
 
 @keyframes movement {
   0% {
-    background-position: 0px 0px;
+    background-position: 0% 0;
   }
   100% {
-    background-position: 560px 0px;
+    background-position: 100% 0;
   }
+}
+.car{
+    max-width:25%;
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
 }
