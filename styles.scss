@@ -108,3 +108,52 @@ text-align: center;
 
 
 Additionally, direction for the carousel can be changed, refer to docs. 
+
+*********************************rocket code below:
+
+.txt2{
+  min-height: 33vh; //change to something else or fit to container. 
+  margin: 0;
+  padding: 0;
+object-fit: contain;
+text-align: center;
+  background-color: #bfdfec;
+  font-family: system-ui, calibri, serif;
+  background-repeat: repeat-x;
+  background-image: url("https://img.freepik.com/free-vector/rising-sun-mountains-starry-sky_1217-1459.jpg?w=740&t=st=1688131186~exp=1688131786~hmac=2da91dbc312da75b5c5dfc17917037d08e9a9267f3930fa8a8bccf72325030f3");
+  background-size: cover;
+ animation: movement 10s linear infinite
+}
+
+@keyframes movement {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes movement2 {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.car{
+    max-width:60%;
+    position: absolute;
+    bottom: -10%;
+    left: 20%;
+    opacity: 0;
+}
+.txt2:hover{
+    .car{
+    opacity:1;
+    }
+      animation: movement2 3.25s linear infinite;
+}
+    
+
+*********************************************************************
