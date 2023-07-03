@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
 body {
     background-color: #ffffff;
     overflow: hidden;
+    cursor: url("/Resources/cursor.png"),auto;
 }
 .main_container {
     background: white;
+   
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .cpl:hover{
     border: 2px solid black;
@@ -23,169 +32,359 @@ body {
 }
 .cpl{
     transition: 300ms;
-}
-.sldr{
-    //object-fit: cover;
-}
-.brdr2{
-   // border: 1px dotted black;
-    //box-shadow: 5px 5px gray;
-}
-.sldr_txt{
-
-}
-.up_scroll_cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //font-weight: 600;
-    font-size: 3.75rem;
-    font-family: "Amatic SC";
-}
-.scroller_up {
-    height: 5.5rem;
-    //margin: auto;
-    overflow: hidden;
-    
-    ul {
-      margin: 0 0.625rem;
-      padding: 0;
-      animation: scrollUp 8s infinite;
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 3rem;
-        list-style: none; 
-      }
-    }
-  }
-  
-  // Variables
-  $item-count: 4;
-  
-  @keyframes scrollUp {
-    @for $i from 1 through ($item-count - 1) {
-      #{($i * 25) - 10%}, #{$i * 25%} {
-        transform: translateY((-100% / $item-count) * $i);
-       // justify-content: center;
-      }
-    }
-  }
------------------------------------------------------------------------**** do not copy upwards
-Add class to carousel-item additionally, change png to botain continous animation. connec front and back
-Additionally maybe the lack of padding and margins is what causes the slideshow to render out of proportion. Combat this by changing the params. 
-
-
- .txt2{
-  min-height: 33vh; //change to something else or fit to container. 
-  margin: 0;
-  padding: 0;
-object-fit: contain;
-text-align: center;
-  background-color: #bfdfec;
-  font-family: system-ui, calibri, serif;
-  background-repeat: repeat-x;
-  background-image: url("https://tmpfiles.org/dl/1630822/newproject1.png");
-  background-size: cover; // fit conver
-  animation: movement 10s linear infinite;
-}
-
-@keyframes movement {
-  0% {
-    background-position: 0% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-.car{
-    max-width:25%;
-    position: absolute;
-    bottom: 0%;
-    left: 40%;
-}
-
-
-Additionally, direction for the carousel can be changed, refer to docs. 
-
-*********************************rocket code below:
-
-.txt2{
-  min-height: 33vh; //change to something else or fit to container. 
-  margin: 0;
-  padding: 0;
-object-fit: contain;
-text-align: center;
-  background-color: #bfdfec;
-  font-family: system-ui, calibri, serif;
-  background-repeat: repeat-x;
-  background-image: url("https://img.freepik.com/free-vector/rising-sun-mountains-starry-sky_1217-1459.jpg?w=740&t=st=1688131186~exp=1688131786~hmac=2da91dbc312da75b5c5dfc17917037d08e9a9267f3930fa8a8bccf72325030f3");
-  background-size: cover;
- animation: movement 10s linear infinite
-}
-
-@keyframes movement {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-@keyframes movement2 {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-.car{
-    max-width:60%;
-    position: absolute;
-    bottom: -10%;
-    left: 20%;
-    opacity: 0;
-}
-.txt2:hover{
-    .car{
-    opacity:1;
-    }
-      animation: movement2 3.25s linear infinite;
-}
-    
-
-*********************************************************************
-
-final
-<img src="https://tmpfiles.org/dl/1631602/sun.png" class="cars">
-
-@keyframes movement {
-  0% {
-    background-position: 0% 30%;
-  }
-  100% {
-    background-position: 100% 30%;
-  }
-}
-
-.car{
-    max-width:60%;
-    position: absolute;
-    bottom: 0%;
-    left: 40%;
-    
-}
-.cars{
    
-    max-width:35%;
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    
 }
 
+.relations{
+    padding-top: 3%;
+    font-size: 3em;
+    font-family: 'Quicksand', sans-serif;
+}
+.scroll_container{
+    color: red;
+}
+#demon{
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+}
+// ************************************************************ Carousel garbage
+  .carousel-item {
+    //margin: 0;
+    padding: 0;
+   // margin-bottom: 1%;
+  }
+  .carousel {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  carousel-inner{
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  
+//   ----------------------------------------------btm txt
 
+@keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10em;
+    }
+  }
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 15em;
+    }
+  }
+  @keyframes text3 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10em;
+    }
+  }
+  @keyframes text4 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10em;
+    }
+  }
+  @keyframes text5 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10em;
+    }
+  }
+  @keyframes text6 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 10em;
+    }
+  }
+  .text_1 {
+    animation: text1;
+  }
+  .text_2 {
+    animation: text2;
+  }
+  .text_3{
+    animation: text3;
+  }
+  .text_4{
+    animation: text4;
+  }
+  .text_5{
+    animation: text5;
+  }
+  .text_6{
+    animation: text6;
+  }
+  .text_1 {
+   
+    white-space: nowrap;
+    
+    
+    animation-duration: 20s;
+    animation-timing-function: steps(0, end);
+    
+  }
+  .text_1::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1 end);
+  }
+  
+// **********************************************in box animation BG 
+.txt2{
+    min-height: 40vh;
+    max-height: 40vh; //change to something else or fit to container. 
+  margin: 0;
+  
+  text-align: center;
+  padding-top: 10%;
+  //border: 2px solid black;
+    background-color: #8ec1da;
+    //font-family: system-ui, calibri, serif;
 
+    background-repeat: repeat-x;
+    background-image: url("/Resources/clouds.png");
+    animation: movement 10s linear infinite;
+  }
+  
+  @keyframes movement {
+    0% {
+      background-position: 0px 100%;
+    }
+    100% {
+      background-position: 560px 100%;
+    }
+  }
 
+//   ******************************************* elm 3 below
+
+.txt5{
+    min-height: 40dvh; //change to something else or fit to container. 
+  margin: 0;
+    color: #f2f2f2;
+  text-align: center;
+  padding-top: 10%;
+  //border: 2px solid black;
+    background-color: #000000;
+    //font-family: system-ui, calibri, serif;
+    background-repeat: repeat-x;
+    background-image: url("/Resources/space3.jpg");
+    animation: movement5 10s linear infinite;
+  }
+  
+  @keyframes movement5 {
+    0% {
+      background-position: 0px 100%;
+    }
+    100% {
+      background-position: 0px 0;
+    }
+  }
+
+//   ******************************************************
+  .maintext{
+    font-family: 'Quicksand', sans-serif;
+    font-size:5rem;
+    //z-index: 9;
+  }
+  .subtext{
+    font-family: 'Quicksand', sans-serif;
+    font-size:1.5rem;
+  }
+  .rocket{
+    position: absolute;
+    bottom:-5%;
+    left: 40%;
+    z-index: 1;
+    max-width: 30%;
+  }
+//   ***************************ELM1 below
+
+.txt1{
+    min-height: 40vh; //change to something else or fit to container. 
+    margin: 0;
+    padding-top: 10%;
+//  object-fit: contain;
+  text-align: center;
+    background-color: #c4e6ed;
+    //font-family: system-ui, calibri, serif;
+    background-repeat: repeat-x;
+    background-image: url("/Resources/road.png");
+    background-size: cover; // fit conver
+    animation: movement1 10s linear infinite;
+  }
+  
+  @keyframes movement1 {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  .car{
+      max-width:10%;
+      position: absolute;
+      bottom: -1%;
+      left: 35%;
+  }
+
+//   ***************************Elm 4
+.txt4{
+    min-height: 40vh; //change to something else or fit to container. 
+    margin: 0;
+    padding-top: 10%;
+ // object-fit: contain;
+  text-align: center;
+    background-color: #ffc9c9;
+    //font-family: system-ui, calibri, serif;
+    background-repeat: repeat-x;
+    background-image: url("/Resources/mountain.png");
+    background-size: cover; // fit conver
+    animation: movement4 10s linear infinite;
+  }
+  
+  @keyframes movement4 {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 30%;
+    }
+  }
+  .ship{
+    max-width:10%;
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+    z-index: 3;
+  }
+  
+
+//   *****************************************Elm5
+
+.txt3{
+min-height: 40vh; //change to something else or fit to container. 
+margin: 0;
+padding-top: 10%;
+// object-fit: contain;
+text-align: center;
+background-color: #ffa764;
+//font-family: system-ui, calibri, serif;
+background-repeat: repeat-x;
+
+background-image: url("/Resources/mars.png");
+background-size: cover; // fit conver
+animation: movement3 20s linear infinite;
+}
+
+@keyframes movement3 {
+0% {
+  background-position: 100% 0;
+}
+100% {
+  background-position: 0% 0;
+}
+}
+.rover{
+max-width:15%;
+position: absolute;
+bottom: -3%;
+right: 40%;
+}
+
+// *********** Animation toggle
+.toggle{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.anim{
+    margin-right: 10px;
+}
+.switch {
+    // padding-left: 20px;
+    font-size: 11px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 1em;
+   }
+   
+   /* Hide default HTML checkbox */
+   .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+   }
+   
+   /* The slider */
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border: 2px solid #000;
+    transition: .4s;
+    border-radius: 1px;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.3em;
+    width: 1.2em;
+    border-radius: 2px;
+    left: 0.2em;
+    bottom: 0.3em;
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: 0.1s;
+   }
+   
+   input:checked + .slider {
+    background-color: #000;
+   }
+   
+   input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+   }
+   
+   input:checked + .slider:before {
+    transform: translateX(1.3em);
+   }
+
+//    ************************* mods to bootstrap
+
+@media (max-width: 767px) {
+    .flex-md-column {
+      flex-direction: column !important;
+    }
+   
+  }
