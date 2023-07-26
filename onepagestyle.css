@@ -1,0 +1,42 @@
+ #fadein{
+     animation: fadeinall 1s normal;
+    z-index:2;
+    position:fixed;
+    top:5%;
+     left: 5%;
+ }
+ .img1{
+
+   scroll-snap-align: center;
+  scroll-snap-stop: always;
+     z-index: -1;
+     object:fit:cover;
+      
+ }
+ .imgsrc{
+     scroll-snap-type: y proximity;
+     
+ }
+ body{
+  
+ }
+ h1{
+     margin-top: 40%;
+     margin-left: 10%;
+     z-index:3;
+     position:absolute;
+ }
+ @keyframes fadeinall {
+    0% {
+      opacity: 0; }
+    97% {
+      opacity: 1; }
+    98% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      z-index: 2; } }
