@@ -199,7 +199,7 @@
     position: fixed;
       margin-top:45%; 
      margin-left:80%;
-     
+     z-index:7;
                     display: inline-block;
                     outline: none;
                     cursor: pointer;
@@ -241,3 +241,24 @@
       -webkit-transform: translateY(-100%);
       transform: translateY(-100%);
       z-index: 2; } }
+      
+      .divcontainer{
+          position: absolute;
+          z-index:5;
+          top: 120%;
+          right: 10%;
+         border-style: solid;
+         border-width:medium;
+         border-color: black;
+         height:60dvh;
+     width: 60dvh;
+      border-radius:3%;
+      /*remove color when done . */
+    
+      }
+      .divcontainer > .boximg {
+        max-height:100%; 
+        max-width:100%;
+      object-fit: cover;
+      /*object fit not working, fix*/
+      }
