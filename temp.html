@@ -1,0 +1,157 @@
+<div class="container-fluid section1">
+    <img class="headerimg" src="https://images.unsplash.com/photo-1642953702322-a5da05d2e36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">
+      <h2 class="logo">Sample Logo</h2>
+      <div class="slidetext">
+          <p class="sent1">This is just a quote.</p>
+      </div>
+      <button class="tldr btn-primary">tl;dr</button>
+</div>
+<div class="container-fluid row section2 p-5">
+    <div class="col-lg-5">
+        <h3 class="display-4">Our Concept</h3>
+        <p class="bodytext">This is just another heading that means nothing</p>
+        <button class="btn-dark readbtn my-5">Read More</button>
+    </div>
+        <div class="col-lg-5">
+            <img class="sec2img" src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80">
+        </div>
+</div>
+     <!----perhaps the entire body can be in one container and margins can be adjusted -->
+     
+    <div class="container-fluid row section3 p-5">
+        
+        <div class="col-lg-5 img2">
+            <img class="sec3img" src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80">
+        </div>
+        
+        <div class="col-lg-5 righttext">
+          <h3 class="display-4">Our Concept</h3>
+            <p class="bodytext">This is just another heading that means nothing</p>
+            <button class="btn-dark readbtn my-5">Read More</button>
+        </div>
+     
+    </div>
+
+
+<div class="container-fluid row section4 p-5">
+    <div class="col-lg-5">
+        <h3 class="display-4">Our Concept</h3>
+        <p class="bodytext">This is just another heading that means nothing</p>
+        <button class="btn-dark readbtn my-5">Read More</button>
+    </div>
+        <div class="col-lg-5">
+            <img class="sec2img" src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80">
+        </div>
+</div>
+
+<div class="sectionlast container-fluid">
+     <div class="col-lg-5">
+        <h3 class="display-4">tl;dr</h3>
+        <p class="bodytext">This is just another heading that means nothing</p>
+        <button class="btn-light readbtn my-5">Read More</button>
+    </div>
+        <div class="col-lg-5 offset-lg-2 px-5">
+            <img class="sec2img" src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80">
+        </div>
+        
+</div>
+
+
+
+
+------------------------------css
+.headerimg{
+    position:absolute;
+    object-fit:cover;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.section1{
+    color:white;
+}
+.logo{
+     font-family: "Times New Roman", Times, serif;
+     position: fixed;
+     top: 5%;
+     left:45%;
+     font-size:28px;
+}
+.slidetext{
+    position: absolute;
+    top:80%;
+    LEFT:5%;
+    font-family: "Times New Roman", Times, serif;
+     font-size:34px;
+}
+.tldr{
+    position:fixed;
+    top: 80%;
+    right:5%;
+   font-size:18px;
+   border-radius:10px !important;
+   padding:0.5% 1%;
+   z-index:5;
+}
+.section2{
+   margin-top:80% !important;
+   margin-left:5% !important;
+   margin-right:5% !important;
+}
+.section3{
+    /*position:relative;*/
+    margin-top:10% !important;
+      margin-left:5% !important;
+   margin-right:5% !important;
+}
+h3{
+    /*font-size:34px;*/
+    color:purple;
+    padding-top:10%;
+}
+.bodytext{
+    font-size:32px;
+    padding-top:10%;
+}
+.sec2img{
+    max-width:30dvw;
+    height:30dvw;
+    object-fit:cover;
+    margin-left:10dvw;
+    border-radius:10px;
+}
+.sec3img{
+    max-width:30dvw;
+    height:30dvw;
+    object-fit:cover;
+    /*margin-right:10dvw;*/
+    border-radius:10px;
+}
+.readbtn{
+    font-size:18px;
+   border-radius:10px !important;
+   padding:0.5% 1%;
+   z-index:5;
+}
+.righttext{
+    text-align:right;
+    border:1px solid red;
+    
+}
+.img2{
+       border:1px solid red;
+}
+
+.section4{
+   margin-top:10% !important;
+   margin-left:5% !important;
+   margin-right:5% !important;
+}
+.sectionlast{
+    width:100%;
+    height:30%;
+    margin-top:10%;
+    background-color: black;
+}
+
