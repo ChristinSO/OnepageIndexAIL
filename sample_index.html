@@ -2,17 +2,43 @@
 <html>
 
 <head>
-    <title>New Index page</title>
+    <title>Angels In Love</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    
+<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1MER3LVM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V1MER3LVM2');
+</script>
+<!-- replace !func everytime you want to alter the popup but do not touch the surrounding function.  -->
+<script id="mcjs">
+function popup() {
+!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/fdd0a6eae771e6363c3efc98c/b4520ebeaf7c5c61980cb6727.js");
+document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";                  
+    document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+</script>
 </head>
 
 <body>
+
+    <div id="wrap">
+        <div class="loader">
+        <img src="/Resources/svg width=140 height=64 viewBox=0 0.svg"  alt="hearts animation">
+        <p class=" display-2 text-primary">Loading</p>
+        </div>
+    </div>
+   
 
     <div class="toggle"><span class="anim">Animation</span><label class="switch">
         <input type="checkbox" id="myCheck">
@@ -25,9 +51,9 @@
         <!-- <img src="/Resources/cpl1.jpg" alt="Couple 1" class="cpl col-4 mx-3 sldr">
         <img src="/Resources/cpl2.jpg" alt="Couple 2" class="cpl col-4 sldr">
         <img src="/Resources/cpl4.jpg" alt="Couple 3" class="cpl col-4 mx-3 sldr"> -->
-        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel1">
+        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel1" >
 
-            <div class="carousel-inner">
+            <div class="carousel-inner"> 
                 <div class="carousel-item active">
                     <img src="/Resources/cpl2.jpg" alt="couple" class="image d-block w-100">
                 </div>
@@ -46,7 +72,7 @@
         
         </div>
 
-        <div class="temp cpl col-4 sldr container carousel slide" data-bs-ride="carousel" id="carousel2">
+        <div class="temp cpl col-4 sldr container carousel slide" data-bs-ride="carousel" id="carousel2" onclick="link2()">
          
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -66,7 +92,7 @@
               </div>
             
         </div>
-        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel3">
+        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel3" onclick="link3()">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/Resources/cpl4.jpg" alt="couple" class="image d-block w-100">
@@ -89,7 +115,7 @@
 <div class="row pt-4 pb-4 px-4">
     <div class="d-flex justify-content-around">
         <!-- <img src="/Resources/cpl5.jpg" alt="Couple 1" class="cpl col-4 mx-3 sldr"> -->
-        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel4">
+        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel4" onclick="link4()">
             
             
             <div class="carousel-inner">
@@ -103,8 +129,8 @@
                     <img src="/Resources/cpl6.jpg" alt="couple" class="image d-block w-100">
                 </div>
                 <div class="carousel-item txt4 element">
-                  <p class="maintext">About Us</p>
-                  <p class="subtext">Find out why we exist.</p>
+                  <p class="maintext">Feature List</p>
+                  <p class="subtext">Find out what we offer.</p>
                   <img src="/Resources/hot.gif" alt="ship" class="ship anim_object">
                   
                 </div>
@@ -113,7 +139,7 @@
         </div>
 
 
-        <div class="cpl col col-4 text-center py-3 brdr2">
+        <div class="cpl col col-4 text-center py-3 brdr2 brand">
             <img src="/Resources/AIL_new_logo_full.png" alt="AIL logo"  class="col col-12 pt-3 px-5 logo">
             <div class="col col-12 relations mx-2 text-center">Come Find <span class="scroll_container"> </span>
                             
@@ -121,7 +147,7 @@
               <!-- ******************************* -->
         </div>
         <!-- <img src="/Resources/cpl6.jpg" alt="Couple 3" class="cpl col-4 mx-3 sldr"> -->
-        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel5">
+        <div class="temp cpl col-4 mx-3 sldr container carousel slide" data-bs-ride="carousel" id="carousel5" onclick="link5()">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/Resources/cpl2.jpg" alt="couple" class="image d-block w-100">
@@ -145,7 +171,7 @@
 <!-- <div class="btm mb-4 cpl p-2 col col-12"><marquee behavior="scroll" direction="left"><img src="/favicon.ico" width="1%">Angels In Love is a one-of-its-kind dating platform to help you find your soulmate. To make it perfect, click here to sign up to our review meeting.</marquee>
 </div> -->
 
-    <div class="btm cpl mb-4 p-2 col-12 text-center">
+    <div class="btm cpl mb-4 p-2 col-12 text-center" onclick="popup()">
         <span class="text_2" id="demon"></span>
     </div>
 
@@ -154,6 +180,48 @@
 
    $(document).ready(function() { 
         
+    function loader(){
+  //spin.style.opacity='0%';
+  //wrap.style.op
+
+  const wrap = document.querySelector("#wrap");
+
+  setTimeout(() => {
+   wrap.style.opacity = "0%";
+   wrap.style.display = "none";
+  }, 200);
+
+ 
+if (window.matchMedia && window.matchMedia(' (max-width: 800px)').matches){ 
+  if (window.matchMedia && window.matchMedia (' (prefers-color-scheme: dark)').matches) {
+    mode = "dark";
+    logoone();
+    
+  };
+   
+}
+}
+loader();
+
+$('#carousel1').click(()=>{
+    window.location.replace("/Prototype");
+});
+$('#carousel2').click(()=>{
+    window.location.replace("/pitch_deck");
+});
+$('#carousel3').click(()=>{
+    window.location.replace("/survey");
+});
+$('#carousel4').click(()=>{
+    window.location.replace("/FeatureList");
+});
+$('#carousel5').click(()=>{
+    window.location.replace("/signin");
+});
+$('.brand').click(()=>{
+    window.location.replace("/About_us");
+});
+
     var check=0;
     $('.switch').change(function() {
     if(check==0){

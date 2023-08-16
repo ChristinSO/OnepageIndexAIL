@@ -1,0 +1,113 @@
+body {
+  background-image: url("/Resources/paper-texture.jpg");
+  background-size: 100%;
+  background-position: center;
+  font-family: "Amatic SC", cursive;
+}
+
+#wrap {
+  background-color: #1f1e1e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+a {
+  color: #505050;
+}
+
+a, a:visited {
+  color: #505050;
+}
+
+a:hover {
+  color: #0603A0;
+}
+
+.my-color {
+  color: #0603A0;
+}
+
+.item {
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+#sign-in {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+
+#sign-in:hover {
+  color: #0603A0;
+}
+
+[class*=col] {
+  padding: 1px;
+}
+
+#mascot {
+  max-width: 80%;
+  margin-bottom: -9%;
+}
+
+.line {
+  opacity: 0;
+}
+
+.menu:hover .line {
+  opacity: 100%;
+  transform: translateY(-5%);
+}
+#sun {
+  cursor: pointer;
+}
+
+@media (min-width: 1263px) {
+  .fixed_btm {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 5%;
+    z-index: 1030;
+  }
+  .margins_right {
+    margin-left: -10%;
+  }
+}
+@media (max-width: 981px) {
+  .margins_right {
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 5%;
+    z-index: 1030;
+  }
+  #mascot {
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 15%;
+  }
+}
+.glink {
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.glink:hover {
+  transform: scale(1.06);
+  transition-duration: 125ms;
+}
+
+@media (prefers-color-scheme: dark) and (max-width: 800px) {
+  .item {
+    color: rgb(3, 3, 184);
+  }
+}/*# sourceMappingURL=newstylesheet.css.map */

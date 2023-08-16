@@ -1,0 +1,31 @@
+body{
+    //background-image: url(/Resources/paperBG.png);
+    background-color: #ffffff;
+background-image: url("/Resources/paper-texture.jpg");
+background-size: 100%;
+background-position: center;
+}
+.logo3{
+    //height: 18%;
+    width: 76%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+.fa:hover{
+    transform: scale(1.75);
+    transition-duration: 120ms;
+ 
+}
+.fa{
+    color: #0d6efd;
+}
+.input-group{
+    justify-content: center;
+}
+
+.lmtd{
+    margin-top: 2%;
+    margin-bottom: -2.5%;
+}

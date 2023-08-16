@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Access</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+</style>
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V1MER3LVM2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V1MER3LVM2');
+</script>
+  </head>
+<body>
+    <!-- <div class="row align-items-center bg-primary" id="main_row"> -->
+        <div class="col-4 col-lg-3 col-md-4 col-sm-5"><img src="/Resources/logo.svg" alt="AIL Logo" class="img-fluid logo3" onclick="funct()" style="cursor: pointer;"></div>
+        
+
+        <div class="display-4 my-1 mx-3 text-center">Please show your support by signing up below.</div>
+
+   <div class="container-fluid  my-4 justify-content-center d-lg-flex flex-md-row align-content-center">
+    
+        <!-- <div class="row my-5"></div> -->
+  
+        <div class="col-10 col-lg-3 box1 border-primary card bg-dark text-white align-items-center mx-5">
+                <img src="/Resources/limited.png" alt="Early Access" class="card-img-top lmtd" style="width: 45%;">
+                <div class="card-body text-center">
+                    <div class="card-title h2">Lifetime Membership</div>
+                    <p class="card-text"> Subscribe and get access to all of our premium features forever
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">No ads ever.</li>
+                            <li class="list-group-item">All premium features for life</li>
+                            <li class="list-group-item">Unique customization options</li>
+                            <li class="list-group-item">Frequent business updates</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal" onclick="lmp()">Buy and Support</a>
+                </div>
+        </div>
+        <!-- style="max-width: 40%;" can be inserted with media queries if needed -->
+        <div class="col-10 col-lg-3 box1 border-primary card bg-dark text-white align-items-center mx-5">
+                <img src="/Resources/limited2.png" alt="Early Access" class="card-img-top lmtd" style="width: 45%;">
+                <div class="card-body text-center">
+                    <div class="card-title h2">Shareholder Experience</div>
+                    <p class="card-text"> Subscribe and get a lifetime membership along with the oppurtunity to help shape the platform to your expectations
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">All premium features for life</li>
+                            <li class="list-group-item">Product Advisory Board membership</li>
+                            <li class="list-group-item">Priority access to Beta tests</li>
+                            <li class="list-group-item">Biweekly business updates</li>
+                        </ul>
+                    </p>
+                    <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#myModal" onclick="sep()">Buy and Support</a>
+                </div>
+        </div>
+
+   
+   
+   </div>
+<!-- why the heck won't this garbage be centered -->
+  <div class="container-fluid justify-content-center d-flex">
+    <div class="card text-center col-sm-12 col-lg-6 bg-transparent border-primary my-2 my-md-1" style="max-width: 80%;">
+        <div class="card-header">Additional Contribution</div>
+        <div class="card-body d-flex mx-md-4 ">
+            <div class="card-title col-md-6 h5">Help us make this project a reality with your contributions.</div>
+            <!-- <div class="card-text">You will also be invited to the product review meetings so that we can fine tune the platform to your expectations.</div> -->
+            <div class="input-group my-1 mx-5">
+                
+                <button class="btn btn-outline-primary" value="Submit" type="button" id="button-addon2"data-bs-toggle="modal" data-bs-target="#myModal">Click to Contribute, every penny counts.</button>
+              </div>
+        </div>
+        <div class="card-footer text-muted">Thank you for your support and follow us to stay updated
+            <a href="https://www.facebook.com/profile.php?id=100090483368565" class="fa fa-facebook mx-md-3 mx-1" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://twitter.com/Project_AIL" class="fa fa-twitter mx-md-3 mx-1" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.reddit.com/user/Team_AIL" class="fa fa-reddit mx-md-3 mx-1" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://us17.list-manage.com/contact-form?u=fdd0a6eae771e6363c3efc98c&form_id=1cadc5553b74160731edeb24ce8f4cbd" class="fa fa-envelope mx-md-3 mx-1" target="_blank" rel="noopener noreferrer"></a>
+
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Terms of Service</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            
+            <section style="background-color: #f9c9aa;">
+                <div class="containerpy-5">
+                  <div class="row d-flex justify-content-center">
+                    <div class="">
+                      <div class="card">
+                        <h4 class="text-center">Payment Policy</h4>
+                        <div class="card-body">
+                          <div class="card-title d-flex justify-content-between mb-0">
+                            <p class="text-muted mb-0">Thank you for your interest in supporting Angels In Love, a startup that aims to create a dating platform for connecting people with similar character traits. By making a payment to us, you agree to the following terms and conditions:
+
+                              Your payment is a one-time contribution and not a recurring subscription. You will not be charged again unless you choose to make another payment in the future.
+                              Your payment details will not be stored by us or shared with any third parties. We use a secure and encrypted payment gateway to process your transaction.
+                              Your payment will be used to fund the development and maintenance of this project. We appreciate your generosity and trust in our vision.
+                              Due to the nature of our business, we are unable to offer refunds at this time. However, if you are not satisfied with our service or have any issues with your account, please contact us at team@angelsinlove.com within 15 days of your payment and we will try our best to resolve them.
+                              If you receive any goods or services from us as part of your payment, such as merchandise or access to premium features, you agree to abide by our terms of service and privacy policy. You also agree that we are not liable for any damages or losses that may arise from your use of such goods or services.
+                              If you have any questions or concerns about your payment, please contact us at team@angelsinlove.com. We are happy to assist you.
+                              We thank you for your support and look forward to your presence in the advisory meetings.</p>
+                            
+                          </div>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary" onclick="payment()" data-bs-dismiss="modal">Pay Now</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- make a form element for validation purposes -->
+    <script>
+
+    var pms=0;
+    function funct(){window.location.replace("/index");
+    };
+ function lmp(){
+    pms=1;
+ }
+ function sep(){
+    pms=2;
+ }
+    function payment(){
+        if(pms==1){
+        window.location.replace("https://buy.stripe.com/test_00gcOjdJI5HE7XG7ss");
+        
+        }
+        if (pms==2) {
+            window.location.replace("https://buy.stripe.com/test_00g29F6hg2vs7XGbIJ");;
+        } else {
+            window.location.replace("https://buy.stripe.com/test_28obKf5dc3zwa5O147");
+        }
+        pms=0;
+    };
+    </script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+$enable-negative-margins: true;
+
+body{
+   //recommend passing bg image to variable to alter for dark mode
+background-image: url("/Resources/paper-texture.jpg");
+background-size: 100%;
+background-position: center;
+font-family: 'Amatic SC', cursive;
+    //overflow: hidden;
+}
+
+#wrap{
+    background-color: #1f1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //opacity: 100%;
+    transition: all 0.2s;
+    //animation: bounce 500ms alternate infinite ease;
+}
+
+
+
+a{
+    color: #505050;
+}
+a, a:visited {
+    //color:#0603A0;
+    color: #505050;
+  }
+  a:hover{
+    color:#0603A0;
+   //transition: left 3000ms ease-in-out;
+    //color: #505050;
+  }
+.my-color{
+    color:#0603A0;
+}
+.item{
+    font-family: 'Lora', serif;
+font-style: italic;
+//color:#0603A0;
+//not working
+//font-weight: bold;
+}
+#sign-in{font-family: 'Amatic SC', cursive;
+font-weight: bold;}
+#sign-in:hover{ color: #0603A0;
+}
+[class*="col"]{
+    padding: 1px;
+   // background-color: yellowgreen;
+    //border: 2px solid blue;
+}
+#main_row{
+    //height: 100%;
+}
+#mascot{
+    max-width: 80%;
+    //vertical-align: bottom;
+    margin-bottom: -9%;
+    //margin-top: 4%;
+}
+.line{
+   //max-width: 1%;
+    //height: 10px;
+   //width: 1px;
+    opacity: 0;
+  // margin-top: -10%;
+    
+}
+.lol{
+   // margin-bottom: -10%;
+}
+.menu:hover{
+.line{
+    opacity: 100%;
+    $enable-negative-margins: true;
+    transform: translateY(-5%)
+    
+
+}
+.item{
+//color: red;
+}
+}
+#sun{
+    cursor: pointer;
+}
+
+
+@media (min-width:1263px) {
+
+    .fixed_btm{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 5%;
+        z-index: 1030;
+}
+
+.margins_right{
+margin-left: -10%;
+}
+}
+
+@media (max-width:981px){
+    .margins_right{
+        position:sticky;
+        right: 0;
+        bottom: 0;
+        left: 5%;
+        z-index: 1030;
+        
+    }
+    #mascot{
+        position:relative;
+        margin-left: 10%;
+        margin-bottom: 15%;
+     }
+//    .lol{
+//     font-size: calc(1.325rem + 2.9vw) !important;
+//    }
+}
+
+.glink{
+    cursor: pointer;
+    margin-top: 2%;
+    
+}
+.glink:hover{
+    transform:scale(1.06);
+    transition-duration: 125ms;
+}
+
+// @media (prefers-color-scheme:light){
+
+//     :root{
+//       --script: alert("this is light mode speaking");
+//     }
+//   }
+  @media (prefers-color-scheme:dark) and (max-width:800px){
+    
+    .item{
+        color: rgb(3, 3, 184);
+    }
+      a:hover{
+        //color:#7a6eff;
+       //transition: left 3000ms ease-in-out;
+        //color: #505050;
+      }
+  }
+
